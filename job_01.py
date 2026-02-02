@@ -3,10 +3,8 @@ class Operation:
         self.nombre1 = nombre1
         self.nombre2 = nombre2
 
-    def __str__(self):
-        return f"Operation(nombre1={self.nombre1}, nombre2={self.nombre2})"
-
 # Instanciation de la classe
-mon_operation = Operation()  # Utilise les valeurs par défaut
+mon_operation = Operation()
 
 print(mon_operation)
+
