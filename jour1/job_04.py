@@ -4,12 +4,12 @@ class Personne:
         self.prenom = prenom
     
     def se_presenter(self):
-        return f"Je m'appelle {self.prenom} {self.nom}."
+        return f"Je m'appelle {self.nom} {self.prenom}."
     
 p1 = Personne("philippe", "meurisse")
 p2 = Personne("ouioui", "nonon")
 p3 = Personne("dark", "vador")
 
-print(p1.se_presenter())
+print(p3.se_presenter())
     
          
