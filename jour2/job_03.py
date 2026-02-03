@@ -65,8 +65,7 @@ livre1 = Livre("Le Petit Prince", "Antoine de Saint-Exupéry", 96)
 livre1.afficher_info()
 
 # exemples avec une erreur
-livre1.set_nb_pages(-50)  
-livre1.set_auteur("Dark vador sa vie son oeuvre")
+livre1.set_auteur("Dark vador")
 livre1.set_nb_pages(120)
 livre1.afficher_info()
 livre1.emprunter()         
