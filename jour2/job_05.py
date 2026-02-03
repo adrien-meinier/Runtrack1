@@ -65,6 +65,9 @@ class Voiture:
 
 
 voiture1 = Voiture("Audi", "AudiQ7", 2005, 45000, 50)
+voiture2 = Voiture("Toyota", "wouhou", 2250, 300, 2)
 
 voiture1.voiture_info()
 voiture1.demarrer()
+voiture2.voiture_info()
+voiture2.demarrer()
