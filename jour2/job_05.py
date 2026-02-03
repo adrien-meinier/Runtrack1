@@ -1,13 +1,12 @@
 class Voiture:
-    def __init__(self, marque, modele, annee, kilometres):
+    def __init__(self, marque, modele, annee, kilometres, reservoir=0):
         self.__marque = marque
         self.__modele = modele
         self.__annee = annee
         self.__kilometres = kilometres
         self.__en_marche = False
-        self.__reservoir = 50
-   
-    
+        self.__reservoir = reservoir
+
     # getters
     def get_marque(self):
         return self.__marque
@@ -44,10 +43,10 @@ class Voiture:
         self.__reservoir = reservoir
 
     def __verifier_plein(self):
-        return self.__reservoir
+        return self.__reservoir > 5
 
     def demarrer(self):
-        if self.__verifier_plein() > 5:
+        if self.__verifier_plein():
             self.__en_marche = True
             print("La voiture démarre.")
         else:
@@ -57,13 +56,15 @@ class Voiture:
         self.__en_marche = False
         print("La voiture est arrêtée.")
 
-    def Voiture_info(self):
-         print(f"Marque : {self.__marque}")
-         print(f"Modele : {self.__modele}")
-         print(f"Annee : {self.__annee}")
-         print(f"kilometres : {self.__kilometres}")
+    def voiture_info(self):
+        print(f"Marque : {self.__marque}")
+        print(f"Modèle : {self.__modele}")
+        print(f"Année : {self.__annee}")
+        print(f"Kilomètres : {self.__kilometres}")
+        print(f"Réservoir : {self.__reservoir} L")
 
-voiture1 = Voiture("Audi", "AudiQ7", "2005", "45000")
 
-voiture1.Voiture_info()
+voiture1 = Voiture("Audi", "AudiQ7", 2005, 45000, 50)
+
+voiture1.voiture_info()
 voiture1.demarrer()
