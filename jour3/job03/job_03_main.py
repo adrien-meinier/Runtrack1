@@ -8,7 +8,7 @@ t3 = Tache("Appeler maman", "Demander comment elle va")
 # Création de la liste de tâches
 ma_liste = ListeDeTaches()
 
-# Ajout des tâches
+# Ajout des tâche
 ma_liste.ajouterTache(t1)
 ma_liste.ajouterTache(t2)
 ma_liste.ajouterTache(t3)
