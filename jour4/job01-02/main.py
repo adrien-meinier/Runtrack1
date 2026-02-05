@@ -4,6 +4,7 @@ from proffesseur import Professeur
 
 #eleve
 eleve1 = Eleve()
+eleve1.bonjour()
 eleve1.allerEnCours()     
 eleve1.afficherAge()      
 eleve1.modifierAge(16)
