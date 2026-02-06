@@ -1,13 +1,12 @@
 from vehicules import Vehicule
-class Voiture(Vehicule):
+class Moto(Vehicule):
     def __init__(self, marque, modele, annee, prix):
         super().__init__(marque, modele, annee, prix)
-        self.portes = 4
+        self.roue = 2
 
     def informations_Vehicule(self):
         super().informations_Vehicule()
-        print(f"Nombre de portes : {self.portes}")
+        print(f"Nombre de roues : {self.roue}")
 
     def demarrer(self):
-        print("La voiture démarre, vroumvroum mdadafaka !")
-
+        print("La moto démarre, wweeeeeeeeeeeee !")

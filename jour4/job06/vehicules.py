@@ -10,3 +10,6 @@ class Vehicule:
         print(f"Modèle : {self.modele}")
         print(f"Année : {self.annee}")
         print(f"Prix : {self.prix} €")
+
+    def demarrer(self):
+        print("Attention, je roule")
